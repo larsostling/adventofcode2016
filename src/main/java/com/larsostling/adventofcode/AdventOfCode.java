@@ -1,6 +1,7 @@
 package com.larsostling.adventofcode;
 
 import com.larsostling.adventofcode.dayone.DayOne;
+import com.larsostling.adventofcode.daytwo.DayTwo;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -19,6 +20,7 @@ public class AdventOfCode {
     private static Map<String, Puzzle> initializePuzzleMap() {
         Map<String, Puzzle> puzzleMap = new HashMap<>();
         puzzleMap.put("1", new DayOne());
+        puzzleMap.put("2", new DayTwo());
         return puzzleMap;
     }
 
