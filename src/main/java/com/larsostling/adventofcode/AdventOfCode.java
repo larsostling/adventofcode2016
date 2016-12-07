@@ -1,6 +1,7 @@
 package com.larsostling.adventofcode;
 
 import com.larsostling.adventofcode.dayone.DayOne;
+import com.larsostling.adventofcode.daythree.DayThree;
 import com.larsostling.adventofcode.daytwo.DayTwo;
 
 import java.io.IOException;
@@ -21,6 +22,7 @@ public class AdventOfCode {
         Map<String, Puzzle> puzzleMap = new HashMap<>();
         puzzleMap.put("1", new DayOne());
         puzzleMap.put("2", new DayTwo());
+        puzzleMap.put("3", new DayThree());
         return puzzleMap;
     }
 
