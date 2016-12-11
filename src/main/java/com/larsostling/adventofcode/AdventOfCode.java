@@ -3,6 +3,7 @@ package com.larsostling.adventofcode;
 import com.larsostling.adventofcode.dayfive.DayFive;
 import com.larsostling.adventofcode.dayfour.DayFour;
 import com.larsostling.adventofcode.dayone.DayOne;
+import com.larsostling.adventofcode.dayseven.DaySeven;
 import com.larsostling.adventofcode.daysix.DaySix;
 import com.larsostling.adventofcode.daythree.DayThree;
 import com.larsostling.adventofcode.daytwo.DayTwo;
@@ -13,7 +14,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -29,13 +29,13 @@ public class AdventOfCode {
         puzzleMap.put("4", new DayFour());
         puzzleMap.put("5", new DayFive());
         puzzleMap.put("6", new DaySix());
+        puzzleMap.put("7", new DaySeven());
         return puzzleMap;
     }
 
     private static String readInputFromFile(String file) throws IOException {
         Path path = Paths.get(file);
-        List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
-        return lines.stream().collect(Collectors.joining("\n"));
+        return Files.lines(path, StandardCharsets.UTF_8).collect(Collectors.joining("\n"));
     }
 
     public static void main(String... args) throws IOException {
