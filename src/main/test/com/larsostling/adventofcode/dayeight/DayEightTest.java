@@ -15,5 +15,4 @@ public class DayEightTest {
                 + "rotate row y=0 by 4\n"
                 + "rotate column x=1 by 1")).isEqualTo("6");
     }
-
 }
