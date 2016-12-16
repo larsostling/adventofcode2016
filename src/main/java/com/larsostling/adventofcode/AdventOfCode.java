@@ -4,6 +4,7 @@ import com.larsostling.adventofcode.dayeight.DayEight;
 import com.larsostling.adventofcode.dayeleven.DayEleven;
 import com.larsostling.adventofcode.dayfive.DayFive;
 import com.larsostling.adventofcode.dayfour.DayFour;
+import com.larsostling.adventofcode.dayfourteen.DayFourteen;
 import com.larsostling.adventofcode.daynine.DayNine;
 import com.larsostling.adventofcode.dayone.DayOne;
 import com.larsostling.adventofcode.dayseven.DaySeven;
@@ -42,6 +43,7 @@ public class AdventOfCode {
         puzzleMap.put("11", new DayEleven());
         puzzleMap.put("12", new DayTwelve());
         puzzleMap.put("13", new DayThirteen());
+        puzzleMap.put("14", new DayFourteen());
         return puzzleMap;
     }
 
