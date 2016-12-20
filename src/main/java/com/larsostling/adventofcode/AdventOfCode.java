@@ -18,6 +18,7 @@ import com.larsostling.adventofcode.dayten.DayTen;
 import com.larsostling.adventofcode.daythirteen.DayThirteen;
 import com.larsostling.adventofcode.daythree.DayThree;
 import com.larsostling.adventofcode.daytwelve.DayTwelve;
+import com.larsostling.adventofcode.daytwenty.DayTwenty;
 import com.larsostling.adventofcode.daytwo.DayTwo;
 
 import java.io.IOException;
@@ -54,6 +55,7 @@ public class AdventOfCode {
         puzzleMap.put("17", new DaySeventeen());
         puzzleMap.put("18", new DayEighteen());
         puzzleMap.put("19", new DayNineteen());
+        puzzleMap.put("20", new DayTwenty());
         return puzzleMap;
     }
 
